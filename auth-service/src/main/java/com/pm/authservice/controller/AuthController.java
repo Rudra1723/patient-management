@@ -25,7 +25,6 @@ public class AuthController {
             @RequestBody LoginRequestDTO loginRequestDTO) {
 
             Optional<String> tokenOptinal = authService.authenticate(loginRequestDTO);
-
             if (tokenOptinal.isEmpty()) {
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
             }
