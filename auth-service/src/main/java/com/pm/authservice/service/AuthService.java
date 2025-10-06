@@ -32,7 +32,7 @@ public class AuthService {
         return token;
     }
 
-    public boolean validateToken(String token) {
+    public static boolean validateToken(String token) {
         try{
             JwtUtil.validateToken(token);
             return true;
@@ -40,5 +40,6 @@ public class AuthService {
             return false;
         }
     }
+
 
 }

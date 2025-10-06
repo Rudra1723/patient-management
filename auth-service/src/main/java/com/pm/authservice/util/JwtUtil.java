@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
+
 import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
@@ -34,7 +35,7 @@ public class JwtUtil {
                 .compact();
     }
 
-    public void validateToken(String token) {
+    public static void validateToken(String token) {
         try{
             Jwts.parser().verifyWith((SecretKey) secretKey)
                     .build()

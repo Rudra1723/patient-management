@@ -50,4 +50,5 @@ public class AuthController {
                 ? ResponseEntity.ok().build()
                 :ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
     }
+
 }
