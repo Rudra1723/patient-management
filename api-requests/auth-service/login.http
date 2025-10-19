@@ -1,6 +1,6 @@
 ##login request to retrive a token
 
-POST http://localhost:4004/auth/login
+POST http://lb-b6fe3fce.elb.localhost.localstack.cloud:4004/auth/login
 Content-Type: application/json
 
 {

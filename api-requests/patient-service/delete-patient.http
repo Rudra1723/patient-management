@@ -1,1 +1,1 @@
-DELETE http://localhost:4000/patients/123e4567-e89b-12d3-a456-426614174000
+DELETE http://lb-b6fe3fce.elb.localhost.localstack.cloud:4000/patients/123e4567-e89b-12d3-a456-426614174000
